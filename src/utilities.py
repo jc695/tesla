@@ -113,7 +113,6 @@ class plotDF:
         self.df = df.compute()
         self.f, self.ax = plt.subplots(figsize=(10, 10))
         seaborn.despine(self.f, left=True, bottom=True)
-        self.model = LinearRegression()
 
     def plot_scatter(self, path:str, fname_suffix:str, x='force', y='spring_displacement', best_fit=True):
         '''create a scatter plot chart based on 'force' and 'spring_displacement' per instructions.
@@ -124,8 +123,11 @@ class plotDF:
         plt.ylim(ymin=0)
         plt.xlim(xmin=0)
 
+
         # if best_fit parameter is True then add best-fit line to plot
         if best_fit:
+            self.model = LinearRegression()
+            self.model.fit(self.x_data.values.reshape(-1, 1), self.y_data)
             plt.plot(self.x_data, self.model.predict(self.x_data.values.reshape(-1, 1)), '-', color='red')
 
         # create a unique_name for the plot image file and specify the output location
@@ -133,4 +135,7 @@ class plotDF:
         outputdir = check_folder_exists(path)
 
         # save the chart to file
+        plt.xlabel('{} (N)'.format(x))
+        plt.ylabel('{} (m)'.format(y))
+        plt.title('{} {}'.format(fname_prefix, ' '.join([el for el in fname_suffix.split('.')[0].split('_')])))
         plt.savefig(os.path.join(outputdir, '{}_{}'.format(fname_prefix, fname_suffix)), dpi=300)
