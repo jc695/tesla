@@ -8,7 +8,7 @@
 - [Contributing](#Contributing)
 
 ## About
-As a part of a new product trial, Tesla has ordered ordered heavy duty coil springs from multiple suppliers. The quality team has completed a series of weight tests to help evaluate the coil springs. They have supplied us with the test data they collected.
+As a part of a new product trial, Tesla has ordered heavy duty coil springs from multiple suppliers. The quality team has completed a series of weight tests to help evaluate the coil springs. They have supplied us with the test data they collected.
 
 A quality team member explains the tests they completed as the following:
 > We start with a spring with no weight on it and measured the distance to the bottom of the spring from the top of the stand. We record this measurement as "start_measurement_m". We then hang a known mass on the spring and wait for it to stop moving. Again, we measure the distance from the bottom of the spring to the top of the stand. We record this measurement as "end_measurement_m". We hung a series of increasingly heavier weights on the spring, measuring the spring each time and recording the results into a file. We repeated this process for multiple springs.
@@ -120,7 +120,7 @@ Additional observation...
 It's possible that during our engineer's testing, the springs reached its elastic limit and stretched beyond its original length. Review and remove data points that were calculated after the spring reached its elastic limit (hint: the original length of the spring is constant with a mass of 0). Then calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included.
 
 **John's Response:**
-> asdf
+> I used the same method to do the line of best fit by using LinearRegression within sklearn to apply the best fit line.  I ran out of time here exploring methods to remove outliers that have reached its elastic limit.  A method I came across that could potentially remove the outliers with more accuracy could be mahalanobis distance.  The greater the distance, the more likely it is an outlier.  Others in consideration where Z-score and IQR.  I used the eye test by evaluating the results form the scatterplot to remove data points above 20,000 N of Force.  Upon removal of these data points, it is clear that Supplier_B and Supplier_C have more consistent springs.  Supplier_A shows inconsistency.
 
 ### Task 5
 Using Hooke's Law of Elasticity, determine the k-value (spring constant) for each spring.
@@ -135,7 +135,7 @@ No code is required for this task. Please record responses in whatever medium yo
 - Do you have enough information to provide any recommendations to the quality team?
 
 **John's Response:**
-> asdf
+> Based on the calculations and charts produced, it is clear that Supplier_B and Supplier_C are consistent in quality of the spring's elasticity.  Supplier_A is less consistent and can be seen that the data points are more scattered against the best fit line.  Altogether, the data ranges from a time band of '2021-08-15 15:01:00' and '2021-09-01 10:40:00' - approximately 15 days.  More data could help to validate the consistencies from each supplier given the principles of Central Limit Theorem and Law of Large Numbers.  Based on the data, I would recommend the quality team to further investigate Supplier_A has their springs are less consistent.
 
 
 ## Contributing
