@@ -83,6 +83,10 @@ class updateDF:
         to_datetime()
         drop_empty_col()
 
+    def remove_data(self, col='force', value=20000):
+        '''task 4 - remove data points'''
+        self.df = self.df[~(self.df[col]>=value)]
+
     def calculate_metrics(self):
         def add_force_col(col:str='mass_kg', gravity:float=9.81):
             '''task 2: calculate force'''

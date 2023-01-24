@@ -26,6 +26,15 @@ def main(dir='test_results'):
             plotDF.plot_scatter(file, 'output_no_best_fit_line.png', best_fit=False)
             # task 3b: scatterplot with best-fit line
             plotDF.plot_scatter(file, 'output_w_best_fit_line.png')
+            # task 4: Pruning/remove data points over 20,000 N in force.
+            # used eye test to remove data points.  There are other methods
+            # like mahalanobis distance that calculates distance from the mean.
+            # ~ran out of time for this task.~
+            updateDF.remove_data()
+            plotDF = ut.plotDF(updateDF.df)
+            plotDF.plot_scatter(file, 'pruned_output_w_best_fit_line.png')
+            updateDF.reset_df()
+
 
 
 if __name__ == '__main__':
