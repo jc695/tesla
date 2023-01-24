@@ -35,7 +35,7 @@ The force, F, being exerted on the spring is equal to the mass, m, multiplied by
 </p>
 
 ## Getting_Started
-This repo makes use of `Makefile` for run and compilation.  This repo also makes use of `MICROMAMBA` to bootstrap fully functional conda-environments.  It’s main usage is in continous integration pipelines: since it’s a single executable, it reduces dramatically bandwidth usage and provide fast operations.
+This application has been programmed in `python 3.10.6`.  This repo makes use of `Makefile` for run and compilation.  This repo also makes use of `MICROMAMBA` to bootstrap fully functional conda-environments.  It’s main usage is in continous integration pipelines: since it’s a single executable, it reduces dramatically bandwidth usage and provide fast operations.
 
 To get started, please git clone this repo.
 ```
