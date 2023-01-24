@@ -73,7 +73,7 @@ It's possible that during our engineer's testing, the springs reached its elasti
 Using Hooke's Law of Elasticity, determine the k-value (spring constant) for each spring.
 
 **John's Response:**
-> asdf
+> See main.py and utilities.py scripts to see how k-value (spring constant) was calculated for each spring.
 
 ### Task 6
 No code is required for this task. Please record responses in whatever medium you see fit.
