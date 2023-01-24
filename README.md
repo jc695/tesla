@@ -68,7 +68,19 @@ make clean
 
 
 ## Installing
-installation instructions
+If you are not on MacOS and need to run the application in Windows, please follow these instructions.
+
+If you have Anaconda installed, you may use conda to execute the following.
+```
+conda env create -f environment.yml
+```
+
+If you do not have Anaconda, you may pip install your requirements.  Please see the following.
+```
+pip install virtualenv
+py -m venv myenv
+pip install -r requirements.txt
+```
 
 ## Tasks
 
