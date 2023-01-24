@@ -26,8 +26,8 @@ The force, F, stored in a spring is linearly related to the distance the spring 
 
 The force, F, being exerted on the spring is equal to the mass, m, multiplied by the acceleration due to gravity, g (9.81 m/s2), so we substitute m*g for F:
 
-  _(m * g) = kx_
-  also can be written as,
+  _(m * g) = kx_ <br />
+  also can be written as, <br />
   _(m * 9.81) = kx_
 
 <p align="center">
