@@ -20,15 +20,15 @@ A quality team member explains the tests they completed as the following:
 ### Hooke's law of elasticity
 The magnitude of the force required to change the length of a spring is directly proportional to the spring constant and the displacement of the spring.
 
-  _f = kx_
+  **_f = kx_**
 
-The force, F, stored in a spring is linearly related to the distance the spring has been stretched (or compressed). When a spring is stretched it exhibits spri ng displacement, x, this is the difference between the spring length after force is applied and the spring length with no force applied. The All springs have an elastic limit, beyond which the law fails. (Those of you who have stretched a Slinky too far know this all too well). The constant of proportionality, k, is called the spring constant. If the spring is stiff (like the ones needed for our new product), k is large. If the spring is weak (like the spring in a ballpoint pen) k is small. Knowing the value k of a particular spring can be matter of some importance.
+The force, F, stored in a spring is linearly related to the distance the spring has been stretched (or compressed). When a spring is stretched it exhibits spring displacement, x, this is the difference between the spring length after force is applied and the spring length with no force applied. The All springs have an elastic limit, beyond which the law fails. (Those of you who have stretched a Slinky too far know this all too well). The constant of proportionality, k, is called the spring constant. If the spring is stiff (like the ones needed for our new product), k is large. If the spring is weak (like the spring in a ballpoint pen) k is small. Knowing the value k of a particular spring can be matter of some importance.
 
 The force, F, being exerted on the spring is equal to the mass, m, multiplied by the acceleration due to gravity, g (9.81 m/s2), so we substitute m*g for F:
 
-  _(m * g) = kx_ <br />
+  **_(m * g) = kx_** <br />
   also can be written as, <br />
-  _(m * 9.81) = kx_
+  **_(m * 9.81) = kx_**
 
 <p align="center">
   <img src='img/spring_displace.png' alt='spring displacement' />
@@ -45,27 +45,41 @@ installation instructions
 ### Task 1
 Test result data is provided in the folder titled “test_results”. Each file represents one test for one spring from a specific supplier. Load the result data from Suppliers A, B, and C into a common format.
 
-[comment]: <> (This is a comment, it will not be included)
-[comment]: <> (in  the output file unless you use it in)
-[comment]: <> (a reference style link.)
+**John's Response**
+> asdf
 
 ### Task 2
 For each test, calculate Force and Spring Displacement. Generate a scatter plot with Force on the X-axis and Spring Displacement on the Y-axis. Save the scatter plot to a file(s).
 
+**John's Response**
+> asdf
+
 ### Task 3
 For each test, calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included. (Please note, we understand that your line may not be the best match for the data)
+
+**John's Response**
+> asdf
 
 ### Task 4
 It's possible that during our engineer's testing, the springs reached its elastic limit and stretched beyond its original length. Review and remove data points that were calculated after the spring reached its elastic limit (hint: the original length of the spring is constant with a mass of 0). Then calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included.
 
+**John's Response**
+> asdf
+
 ### Task 5
 Using Hooke's Law of Elasticity, determine the k-value (spring constant) for each spring.
+
+**John's Response**
+> asdf
 
 ### Task 6
 No code is required for this task. Please record responses in whatever medium you see fit.
 - Given the data and calculations you have made, what information can you tell us about each spring?
 - Is there any additional information or data do you wish you had?
 - Do you have enough information to provide any recommendations to the quality team?
+
+**John's Response**
+> asdf
 
 
 ## Contributing
