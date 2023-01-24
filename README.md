@@ -46,19 +46,22 @@ installation instructions
 Test result data is provided in the folder titled “test_results”. Each file represents one test for one spring from a specific supplier. Load the result data from Suppliers A, B, and C into a common format.
 
 **John's Response**
-> asdf
+> See main.py and utiliies.py scripts to see how the data gets read, preprocessed, and then transformed.  
 
 ### Task 2
 For each test, calculate Force and Spring Displacement. Generate a scatter plot with Force on the X-axis and Spring Displacement on the Y-axis. Save the scatter plot to a file(s).
 
 **John's Response**
-> asdf
+> See main.py and utilities.py scripts to see how Force and Sprint Displacement was calculated.  Scatter plots are saved for each TestResults file.  Based on the availble test results, there should be 3 png files in the output folder.  The png files related to task 2 are specified with suffix 'output_no_best_fit_line.png'.
 
 ### Task 3
 For each test, calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included. (Please note, we understand that your line may not be the best match for the data)
 
 **John's Response**
-> asdf
+> To calculate the line of best fit, I used the sklearn library calling the LinearRegression module.  sklearn's LinearRegression library is well maintained and works pretty well to quickly calculate the best fit line.  The independent variable is Force and the dependent variable is Sprint Displacement.  The line of best fit will be red color.  I created additional scatterplot charts with the best fit line included.  The png files related to task 3 are specified with suffix 'output_w_best_fit_line.png'.
+
+Additional observation...
+> Based on the data points plotted, there is an obvious positive relation between Force and Spring Displacement.  Another observation that can be seen is that approximately after 1.8m+ in Spring Displacement, we can see that the data points plateaus.  Initial assumptions would be that the plateau indicates the spring has reached it's max elasticity or stretch.
 
 ### Task 4
 It's possible that during our engineer's testing, the springs reached its elastic limit and stretched beyond its original length. Review and remove data points that were calculated after the spring reached its elastic limit (hint: the original length of the spring is constant with a mass of 0). Then calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included.
