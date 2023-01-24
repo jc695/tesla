@@ -3,10 +3,10 @@ import os
 
 import utilities as ut
 
-def main():
+def main(dir='test_results'):
     '''main process for data pipeline'''
     # establish the data directory
-    filepath = os.path.join('..', 'data', 'test_results')
+    filepath = os.path.join('..', 'data', dir)
 
     # iterate through the data directory and perform the specified task
     # from the challenge instructions
