@@ -41,7 +41,28 @@ Instructions on how to get started
 installation instructions
 
 ## Usage
-step by step instructions
+
+### Task 1
+Test result data is provided in the folder titled “test_results”. Each file represents one test for one spring from a specific supplier. Load the result data from Suppliers A, B, and C into a common format.
+
+### Task 2
+For each test, calculate Force and Spring Displacement. Generate a scatter plot with Force on the X-axis and Spring Displacement on the Y-axis. Save the scatter plot to a file(s).
+
+### Task 3
+For each test, calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included. (Please note, we understand that your line may not be the best match for the data)
+
+### Task 4
+It's possible that during our engineer's testing, the springs reached its elastic limit and stretched beyond its original length. Review and remove data points that were calculated after the spring reached its elastic limit (hint: the original length of the spring is constant with a mass of 0). Then calculate the line of best fit and plot the line. Describe your method for how you defined the line of best fit and any comments you have regarding the results. Save the plot to a file(s) with the line of best fit included.
+
+### Task 5
+Using Hooke's Law of Elasticity, determine the k-value (spring constant) for each spring.
+
+### Task 6
+No code is required for this task. Please record responses in whatever medium you see fit.
+- Given the data and calculations you have made, what information can you tell us about each spring?
+- Is there any additional information or data do you wish you had?
+- Do you have enough information to provide any recommendations to the quality team?
+
 
 ## Contributing
 No contributions please.
