@@ -103,6 +103,7 @@ class updateDF:
 
 
 class plotDF:
+    '''class object to plot graph'''
     def __init__(self, df):
         seaborn.set(style='whitegrid')
         self.df = df.compute()
@@ -110,16 +111,22 @@ class plotDF:
         seaborn.despine(self.f, left=True, bottom=True)
         self.model = LinearRegression()
 
-    def plot_scatter(self, path, fname_suffix, x='force', y='spring_displacement', best_fit=True):
+    def plot_scatter(self, path:str, fname_suffix:str, x='force', y='spring_displacement', best_fit=True):
+        '''create a scatter plot chart based on 'force' and 'spring_displacement' per instructions.
+        x and y are set as parameters in case we need to select different dimensions.
+        '''
         self.x_data, self.y_data = self.df[x], self.df[y]
         seaborn.scatterplot(x=x, y=y, data=self.df, ax=self.ax)
         plt.ylim(ymin=0)
         plt.xlim(xmin=0)
 
+        # if best_fit parameter is True then add best-fit line to plot
         if best_fit:
             plt.plot(self.x_data, self.model.predict(self.x_data.values.reshape(-1, 1)), '-', color='red')
 
+        # create a unique_name for the plot image file and specify the output location
         fname_prefix = find_unique_name(path)
         outputdir = check_folder_exists(path)
 
+        # save the chart to file
         plt.savefig(os.path.join(outputdir, '{}_{}'.format(fname_prefix, fname_suffix)), dpi=300)
