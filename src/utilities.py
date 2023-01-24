@@ -85,12 +85,16 @@ class updateDF:
 
     def calculate_metrics(self):
         def add_force_col(col:str='mass_kg', gravity:float=9.81):
+            '''task 2: calculate force'''
             self.df['force'] = self.df[col] * gravity
 
         def add_displacement_col(col1:str='start_measurement_m', col2:str='end_measurement_m'):
+            '''task 2: calculate spring displacement'''
             self.df['spring_displacement'] = self.df[col2] - self.df[col1]
 
         def add_constant_col(col1:str='force', col2:str='spring_displacement'):
+            '''task 5: calculate sprint constant based on Hooke's law of elasticity.
+            See README for how to calculate constant'''
             self.df['spring_constant'] = da.nan_to_num(self.df[col1] / self.df[col2])
 
         add_force_col()
