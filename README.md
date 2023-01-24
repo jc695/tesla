@@ -82,6 +82,17 @@ py -m venv myenv
 pip install -r requirements.txt
 ```
 
+To run the main script, please CD into src and run the following.
+```
+cd src
+python main.py
+```
+
+To run my test, please run the following.
+```
+python -m pytest
+```
+
 ## Tasks
 
 ### Task 1
