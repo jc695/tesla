@@ -1,4 +1,6 @@
 *.DS_Store
+.micromamba
+.venv
 .ipynb_checkpoints/
 tesla_eda.ipynb
 output/
