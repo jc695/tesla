@@ -14,7 +14,7 @@ A quality team member explains the tests they completed as the following:
 > We start with a spring with no weight on it and measured the distance to the bottom of the spring from the top of the stand. We record this measurement as "start_measurement_m". We then hang a known mass on the spring and wait for it to stop moving. Again, we measure the distance from the bottom of the spring to the top of the stand. We record this measurement as "end_measurement_m". We hung a series of increasingly heavier weights on the spring, measuring the spring each time and recording the results into a file. We repeated this process for multiple springs.
 
 <p align="center">
-  <img src='img/spring_test.png' alt='spring image' />
+  <img src='img/spring_test.png' alt='spring_image' />
 </p>
 
 ### Hooke's law of elasticity
@@ -31,7 +31,7 @@ The force, F, being exerted on the spring is equal to the mass, m, multiplied by
   _(m * 9.81) = kx_
 
 <p align="center">
-  <img src='img/spring_displace.png' alt='spring displacement image' />
+  <img src='img/spring_displace.png' alt='spring_displacement_image' />
 </p>
 
 ## Getting_Started
