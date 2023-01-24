@@ -20,11 +20,19 @@ A quality team member explains the tests they completed as the following:
 ### Hooke's law of elasticity
 The magnitude of the force required to change the length of a spring is directly proportional to the spring constant and the displacement of the spring.
 
-_f = kx_
+  _f = kx_
 
 The force, F, stored in a spring is linearly related to the distance the spring has been stretched (or compressed). When a spring is stretched it exhibits spri ng displacement, x, this is the difference between the spring length after force is applied and the spring length with no force applied. The All springs have an elastic limit, beyond which the law fails. (Those of you who have stretched a Slinky too far know this all too well). The constant of proportionality, k, is called the spring constant. If the spring is stiff (like the ones needed for our new product), k is large. If the spring is weak (like the spring in a ballpoint pen) k is small. Knowing the value k of a particular spring can be matter of some importance.
 
 The force, F, being exerted on the spring is equal to the mass, m, multiplied by the acceleration due to gravity, g (9.81 m/s2), so we substitute m*g for F:
+
+  _(m * g) = kx_
+  also can be written as,
+  _(m * 9.81) = kx_
+
+<p align="center">
+  <img src='img/spring_displace.png' alt='spring displacement image' />
+</p>
 
 ## Getting_Started
 Instructions on how to get started
