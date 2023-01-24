@@ -35,7 +35,11 @@ The force, F, being exerted on the spring is equal to the mass, m, multiplied by
 </p>
 
 ## Getting_Started
-Instructions on how to get started
+To get started with this application.  Please git clone this repo first.
+
+```
+git clone https://github.com/jc695/tesla.git
+```
 
 ## Installing
 installation instructions
