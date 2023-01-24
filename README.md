@@ -4,7 +4,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Installing](#installing)
-- [Usage](#usage)
+- [Tasks](#tasks)
 - [Contributing](#Contributing)
 
 ## About
@@ -35,16 +35,42 @@ The force, F, being exerted on the spring is equal to the mass, m, multiplied by
 </p>
 
 ## Getting_Started
-To get started with this application.  Please git clone this repo first.
+This repo makes use of `Makefile` for run and compilation.  This repo also makes use of `MICROMAMBA` to bootstrap fully functional conda-environments.  It’s main usage is in continous integration pipelines: since it’s a single executable, it reduces dramatically bandwidth usage and provide fast operations.
 
+To get started, please git clone this repo.
 ```
 git clone https://github.com/jc695/tesla.git
 ```
 
+**NOTE**
+*This application was built in MacOS.  If you are running on Windows, please ignore the following instructions and proceed to the installing section below.*
+
+Next, make sure you're in the parent directory.  Once in the parent directory, you can run `make` to see the list of run commands from the `Makefile`.
+```
+run                            Run the program on the provided dataset
+test                           Run tests
+```
+
+To execute all the results from tasks below, please run the following.
+```
+make run
+```
+
+To run some unit testing, please run the following.
+```
+make test
+```
+
+In case you need to restart or reconfigure your venv and dependencies, please run the following.
+```
+make clean
+```
+
+
 ## Installing
 installation instructions
 
-## Usage
+## Tasks
 
 ### Task 1
 Test result data is provided in the folder titled “test_results”. Each file represents one test for one spring from a specific supplier. Load the result data from Suppliers A, B, and C into a common format.
